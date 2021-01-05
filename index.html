@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .style {
+            padding-top: 109px;
+            
+            }
+            .itemA {
+                grid-area: header;
+            }
+            .itemb {
+                grid-area: footer;
+            }
+            .itemc {
+                grid-area: main;
+            }
+            .container {
+                display: grid;
+                grid-template-columns: 33% 33% 33%;
+                grid-template-rows: auto;
+                grid-template-areas: 
+                "header header header"
+                "main main main"
+                "footer footer footer";
+            }
+        </style>
+    </head>
+    <body>
+        <div class= "container">
+            <div class="itemc"> 
+                <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                </svg>
+                <input type="text" placeholder="">
+            </div>
+    
+
+            <div class="itemb">
+                <a class="active" href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div class="itemA">
+                <a href="">About</a>
+                <a href="">Store</a>
+                <a href="">Gmail</a>
+                <a href="">images</a>
+
+            </div>
+        </div>
+    </body>
+</head>
+</html>
